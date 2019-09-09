@@ -10,6 +10,12 @@ import javax.transaction.Transactional;
  * Created by LaunchCode
  */
 @Repository
+/* this tells spring that this interface is a repository and it should manage it for us, creates a concrete class
+that implements this interface
+ */
 @Transactional
+/* all of the methods of this interface should be wrapped by a dataabase interaction
+
+ */
 public interface CheeseDao extends CrudRepository<Cheese, Integer> {
 }

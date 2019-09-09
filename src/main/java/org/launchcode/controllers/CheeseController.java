@@ -22,6 +22,8 @@ import javax.validation.Valid;
 public class CheeseController {
 
     @Autowired
+    /* you should be given an instance of the class by the framework.
+     */
     private CheeseDao cheeseDao;
 
     // Request path: /cheese
